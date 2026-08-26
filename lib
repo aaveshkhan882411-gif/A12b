@@ -1,0 +1,74 @@
+// ==========================================
+// GrowthAI Enterprise Core Database & Logic
+// Self-Hosted & High-Performance Architecture
+// ==========================================
+
+export const AI_AGENTS_LIST = [
+  { id: 'ceo', name: 'AI CEO', role: 'Strategic oversight & leadership', category: 'Management' },
+  { id: 'sales', name: 'AI Sales', role: 'Qualifies leads and closes deals', category: 'Revenue' },
+  { id: 'receptionist', name: 'AI Receptionist', role: '24/7 enquiry handling', category: 'Support' },
+  { id: 'voice', name: 'AI Voice', role: 'Human-grade phone call handling', category: 'Communication' },
+  { id: 'support', name: 'AI Support', role: 'Resolves tier-1 questions instantly', category: 'Support' },
+  { id: 'followup', name: 'AI Follow-up', role: 'Automated lead nurturing', category: 'Revenue' },
+  { id: 'appointment', name: 'AI Appointment', role: 'Direct calendar booking', category: 'Operations' },
+  { id: 'crm', name: 'AI CRM', role: 'Pipeline updates and management', category: 'Operations' },
+  { id: 'email', name: 'AI Email', role: 'Smart inbox management', category: 'Communication' },
+  { id: 'whatsapp', name: 'AI WhatsApp', role: 'Instant messaging automation', category: 'Communication' },
+  { id: 'review', name: 'AI Review Manager', role: 'Reputation compounding', category: 'Growth' },
+  { id: 'analytics', name: 'AI Analytics', role: 'Data-driven actionable metrics', category: 'Growth' },
+  { id: 'workflow', name: 'AI Workflow', role: 'Inter-agent connective tissue', category: 'Operations' }
+];
+
+export const SUBSCRIPTION_PLANS = [
+  {
+    id: 'standard',
+    name: 'Standard',
+    monthlyPrice: 1999,
+    yearlyPrice: 19990,
+    agentLimit: 4,
+    description: '4 AI agents of your choice + CRM, appointments & messages'
+  },
+  {
+    id: 'premium',
+    name: 'Premium',
+    monthlyPrice: 2999,
+    yearlyPrice: 35000,
+    agentLimit: 7,
+    description: '7 AI agents of your choice + AI Voice & advanced workflows'
+  },
+  {
+    id: 'enterprise',
+    name: 'Enterprise',
+    monthlyPrice: 3999,
+    yearlyPrice: 45000,
+    agentLimit: 13,
+    description: 'All 13 AI agents + Dedicated Priority Server & Custom Models'
+  }
+];
+
+// Top 10 High-Revenue Generating Companies (Visible only in Admin Three-Dot Menu)
+export const TOP_REVENUE_LEADERBOARD = [
+  { rank: 1, companyName: "Nexus Global Corp", revenue: "$142,500", agentsUsed: ["AI CEO", "AI Sales", "AI Voice"] },
+  { rank: 2, companyName: "Vortex Logistics", revenue: "$118,200", agentsUsed: ["AI CRM", "AI Support", "AI Appointment"] },
+  { rank: 3, companyName: "Apex Retailers", revenue: "$95,400", agentsUsed: ["AI WhatsApp", "AI Email", "AI Review Manager"] },
+  { rank: 4, companyName: "Zenith Tech Solutions", revenue: "$84,100", agentsUsed: ["AI CEO", "AI Analytics", "AI Workflow"] },
+  { rank: 5, companyName: "Pioneer Real Estate", revenue: "$76,900", agentsUsed: ["AI Sales", "AI Follow-up", "AI Voice"] },
+  { rank: 6, companyName: "Starlight Media", revenue: "$62,300", agentsUsed: ["AI Receptionist", "AI Email", "AI Support"] },
+  { rank: 7, companyName: "Quantum Health", revenue: "$58,000", agentsUsed: ["AI Appointment", "AI Support", "AI CRM"] },
+  { rank: 8, companyName: "Blaze E-Commerce", revenue: "$51,600", agentsUsed: ["AI Sales", "AI Review Manager", "AI WhatsApp"] },
+  { rank: 9, companyName: "Titan FinTech", revenue: "$47,200", agentsUsed: ["AI CEO", "AI Analytics", "AI Workflow"] },
+  { rank: 10, companyName: "Alpha Logistics", revenue: "$41,000", agentsUsed: ["AI Voice", "AI Follow-up", "AI CRM"] }
+];
+
+// Fail-safe automatic refund & apology message for technical glitches or stuck payments
+export const FAIL_SAFE_APOLOGY_MESSAGE = "Sorry for the inconvenience and time waste! Our core systems are fully operational and optimized by our engineering team. Your automatic refund has been processed securely to your account, and you can now retry your subscription purchase seamlessly.";
+
+// Monthly Autonomous Performance Generator Logic
+export function generateMonthlyReport(clientName, revenueGenerated, hoursSaved) {
+  return {
+    client: clientName,
+    message: `Hello ${clientName}, your autonomous AI agents successfully generated $${revenueGenerated} in net revenue and saved ${hoursSaved} operational hours this billing cycle!`,
+    timestamp: new Date().toISOString()
+  };
+}
+
